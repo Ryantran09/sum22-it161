@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>IT161 Test Web Page by Duy Tran</title>
+        <!--START Styles Here-->
+        <style>
+            img {
+                float: left;
+                margin: 1em;
+            }
+    
+            a {
+                color: black;
+            }
+    
+            a:hover {
+                color: red;
+                background-color: yellow;
+                text-decoration: none;
+            }
+    
+            footer {
+                clear: both;
+            }
+        </style>
+        <!--END Styles Here-->
+    </head>
+    <body>
+        <header>
+            <h1>Duy Tran's IT161 Test Page</h1>
+            <nav>
+                <a href="https://www.w3.org/" target="_blank">TheW3C</a> |
+                <a href="https://whatwg.org/" target="_blank">WHATWG Community</a> |
+                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> |
+                <a href="https://www.linkedin.com/learning/login" target="_blank">LinkedIn Learning Library</a>
+            </nav>
+        </header>
+        <img src="images/me.jpg" alt="Picture of Duy" />
+        <p>This is my first test web page for my IT161 class. I will be testing it in a live browser like Chrome or Firefox
+            by clicking on the two validator links in the footer of this page. </p>
+            <footer>
+                <p><small>&copy; 2022 by 
+                    <a href="contact.php">Duy Tran</a>, All Rights Reserved ~ 
+                    <a id="html-checker" href="#">Check HTML</a> ~ 
+                    <a id="css-checker" href="#">Check CSS</a></small>
+               </p>
+              </footer>
+               
+            <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+               
+            <script>
+              //https://tinyurl.com/dynamic-html-checker
+              document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                
+              document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+              
+              //manages mobile nav 
+              function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                      x.className += " responsive";
+                  } else {
+                      x.className = "topnav";
+                  }
+              }   
+           </script>
+    </body>
+</html>
