@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Duy Tran's IT161 HTML Elements</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ </head>
+ <body>
+     <header>
+     <h1>Mia's Boutique</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html">Home</a>
+     </header>
+     
+   <div class="wrapper">
+
+    <img class="desktop" src="images/cloth.jpeg" alt="Mia's Boutique" />
+
+    <img class="desktop" src="images/local3.jpeg" alt="Mia's Boutique" />
+       
+     <img class="tablet" src="images/local.jpeg" alt="Mia's Boutique" />
+       
+     <img class="phone" src="images/local2.jpeg" alt="Mia's Boutique" />
+     
+       <h2 class="subheader">Local Brands</h2>
+       
+       <p>Chocolate pie shortbread donut donut marshmallow cookie jelly-o. Donut pudding cookie apple pie biscuit icing jelly lollipop. Powder shortbread chocolate bar icing cookie chocolate pudding. Marshmallow bear claw powder cheesecake sweet roll. Fruitcake jelly-o cookie gingerbread donut halvah bonbon wafer. Jujubes chocolate cake candy biscuit candy canes jelly. Lollipop pudding jujubes icing shortbread liquorice pudding dragée wafer.</p>
+     <footer>
+      <p><small>&copy; 2022 by 
+          <a href="contact.php">Duy Tran</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>

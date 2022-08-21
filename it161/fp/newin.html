@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <style>
+
+    h1{
+      font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+    
+    footer{
+      text-align: center;
+      font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    
+    </style>
+  <title>Mia's Boutique</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+ </head>
+ <body>
+     <header>
+     <h1>New In</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html">Home</a>
+     </nav>
+     </header>
+     
+   <div class="wrapper">
+     
+    <img class="desktop" src="images/local3.jpeg" alt="Mia's Boutique" />
+
+    <img class="desktop" src="images/newin2.jpeg" alt="Mia's Boutique" />
+       
+     <img class="tablet" src="images/newin.jpeg" alt="Mia's Boutique" />
+       
+     <img class="phone" src="images/newin2.jpeg" alt="Mia's Boutique" />
+
+       <h2 class="subheader">Catch up with the trend</h2>
+       <p> Gummi bears dragée oat cake tootsie roll jelly lemon drops jelly gummi bears cupcake. Marzipan ice cream chocolate chocolate bar jujubes. Candy canes sweet roll croissant cupcake wafer pudding. Chocolate oat cake cake gummi bears fruitcake biscuit. Marzipan chupa chups jelly sweet roll brownie marzipan wafer jelly beans caramels. Sugar plum apple pie chocolate liquorice candy lemon drops ice cream. Tart croissant caramels jelly cheesecake gingerbread. Sweet roll powder biscuit cheesecake soufflé topping.</p>
+     <footer>
+      <p><small>&copy; 2022 by 
+          <a href="contact.php">Duy Tran</a>, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+     </p>
+    </footer>
+  </div>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+     
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }   
+ </script>
+     
+ </body>
+</html>
